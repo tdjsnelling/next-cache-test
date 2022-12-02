@@ -3,6 +3,7 @@ WORKDIR /app
 COPY . .
 RUN yarn install
 ARG NF_GIT_SHA
+ARG NEXT_PUBLIC_GIT_SHA
 RUN yarn build
 
 FROM node:16
