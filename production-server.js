@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000
 const app = next({ dev, hostname, port })
 const handle = app.getRequestHandler()
 
-const etag = `"${process.env.NF_GIT_SHA}"`
+const etag = `"${process.env.NF_DEPLOYMENT_SHA}"`
 
 app.prepare().then(() => {
   createServer(async (req, res) => {
