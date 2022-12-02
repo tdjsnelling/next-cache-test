@@ -9,7 +9,7 @@ const nextConfig = {
         headers: [
           {
             key: 'etag',
-            value: `${process.env.COMMIT_SHA}`
+            value: `${process.env.NF_GIT_SHA}`
           }
         ]
       }
