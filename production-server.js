@@ -16,7 +16,7 @@ app.prepare().then(() => {
       const { pathname } = parsedUrl
 
       if (!pathname.startsWith('/api')) {
-        res.setHeader('Cache-Control', 'max-age=60')
+        res.setHeader('Cache-Control', 'max-age=300, private')
       }
 
       await handle(req, res, parsedUrl)
