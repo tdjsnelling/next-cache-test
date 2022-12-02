@@ -13,4 +13,4 @@ COPY --from=build /app/.next ./.next
 COPY --from=build /app/next.config.js ./next.config.js
 COPY --from=build /app/package.json ./package.json
 EXPOSE 3000
-CMD ["node_modules/.bin/next", "start"]
+CMD ["yarn", "start"]

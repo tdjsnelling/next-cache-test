@@ -8,8 +8,8 @@ const nextConfig = {
         source: '/:path*',
         headers: [
           {
-            key: 'etag',
-            value: `${process.env.NF_GIT_SHA}`
+            key: 'ETag',
+            value: `"${process.env.NF_GIT_SHA}"`
           }
         ]
       }
