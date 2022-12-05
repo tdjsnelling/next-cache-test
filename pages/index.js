@@ -17,7 +17,8 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          Commit {process.env.NEXT_PUBLIC_GIT_SHA}
+          Get started by editing{' '}
+          <code className={styles.code}>pages/index.js</code>
         </p>
 
         <div className={styles.grid}>
